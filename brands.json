@@ -1,0 +1,8 @@
+{
+    "brands" : [
+        { "name" : "Nike", "id" : 53 }
+    ],
+    "sizes" : [
+        { "size" : "XXL", "id" : 211 }
+    ]
+}
