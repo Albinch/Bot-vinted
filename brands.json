@@ -1,8 +1,9 @@
 {
     "brands" : [
-        { "name" : "Nike", "id" : 53 }
+        { "name" : "Carhartt", "id" : 362 },
+        { "name" : "Carhartt WIP", "id" : 872289 }
     ],
     "sizes" : [
-        { "size" : "46", "id" : 792 }
+        { "size" : "XXL", "id" : 211 }
     ]
 }

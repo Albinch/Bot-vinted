@@ -5,14 +5,16 @@ export default class Item{
    brand: string;
    url: string;
    size: string;
+   timestamp: number;
 
-   constructor(id: number, price: number, currency: string, brand: string, url: string, size: string){
+   constructor(id: number, price: number, currency: string, brand: string, url: string, size: string, timestamp: number){
        this.id = id;
        this.price = price;
        this.currency = currency;
        this.brand = brand;
        this.url = url;
        this.size = size;
+       this.timestamp = timestamp
    }
 
    printItem(){
@@ -22,6 +24,7 @@ export default class Item{
        console.log("Marque : " + this.brand);
        console.log("Url : " + this.url);
        console.log("Taille : " + this.size);
+       console.log("Timestamp : " + this.timestamp);
    }
 
    isInsideList(items: Array<Item>){

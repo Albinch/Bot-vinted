@@ -14,14 +14,13 @@ client.on("messageCreate", async function(message){
     let prefix = "!";
     if(message.channel.type !== "DM"){
         if(message.content === prefix + "start"){
-            let items: Array<Item> = [];
-            await watch(items, message.channel);
+            await watch(message.channel);
         }
     }
 });
 
 client.on("newItemsEvent", async function sendAlert(item: Item, channel: Discord.AnyChannel){
-    (channel as Discord.TextChannel).send("Hey <@everyone>, j'ai trouvé un nouvel article !<:star_struck:949371085181296711>\n"
+    (channel as Discord.TextChannel).send("Hey @everyone, j'ai trouvé un nouvel article !<:star_struck:949371085181296711>\n"
                                         + "- Prix : " + item.price + " " + item.currency + "\n"
                                         + "- Taille : " + item.size + "\n"
                                         + "Cours le cliquer ! <:arrow_right:949371810296778843>\n" + item.url + String(item.id));
